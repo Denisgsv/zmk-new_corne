@@ -59,7 +59,7 @@
 &kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                             &kp UP                &kp Y      &kp U  &kp I          &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp RIGHT_SHIFT
 &kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
-                              &kp LEFT_ALT  &mo 3  &kp SPACE                                               &kp ENTER  &mo 2  &kp RIGHT_GUI
+                              &kp LEFT_ALT  &mo 1  &kp SPACE                                               &kp ENTER  &mo 2  &kp RIGHT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -67,10 +67,21 @@
 
         Denis_1 {
             bindings = <
-&kp NON_US_BACKSLASH  &kp NUMBER_0  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans                &kp NUMBER_1  &trans    &kp DOWN      &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans                &kp NUMBER_2  &trans    &trans        &trans     &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                              &trans        &trans     &trans                                    &trans  &trans  &trans
+&kp NON_US_BACKSLASH  &kp NUMBER_0  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans                        &mmv MOVE_UP            &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &kp NUMBER_1  &trans    &kp DOWN      &trans     &trans                &trans  &mkp LCLK       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &kp NUMBER_2  &trans    &trans        &trans     &trans  &kp C_MUTE            &mmv MOVE_DOWN          &trans  &trans  &trans  &trans  &trans  &trans
+                                              &trans        &trans     &trans                                                &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        denis_2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
 
