@@ -69,7 +69,7 @@
             bindings = <
 &kp NON_US_BACKSLASH  &kp NUMBER_0  &kp LEFT      &kp UP_ARROW  &kp RIGHT     &kp N8                        &bt BT_SEL 0              &kp LBKT         &kp RBKT  &trans         &kp MINUS  &kp EQUAL  &kp DEL
 &trans                &kp NUMBER_1  &kp NUMBER_3  &kp DOWN      &kp NUMBER_6  &kp N9            &bt BT_PRV  &bt BT_CLR    &bt BT_NXT  &kp NON_US_HASH  &kp SEMI  &kp APOS       &trans     &trans     &trans
-&trans                &kp NUMBER_2  &kp NUMBER_4  &kp N5        &kp N7        &kp N0  &trans                &bt BT_SEL 1              &trans           &trans    &trans         &trans     &trans     &studio_unlock
+&studio_unlock        &kp NUMBER_2  &kp NUMBER_4  &kp N5        &kp N7        &kp N0  &trans                &bt BT_SEL 1              &trans           &trans    &trans         &trans     &trans     &trans
                                                   &trans        &trans        &trans                                                  &trans           &trans    &kp RIGHT_ALT
             >;
 
@@ -78,10 +78,10 @@
 
         denis_2 {
             bindings = <
-&rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &kp N1  &kp N2  &kp N3  &trans                                            &bt BT_CLR_ALL                &kp F1  &kp F2   &kp F3   &kp F4   &kp PRINTSCREEN  &trans
-&trans           &trans           &kp N4  &kp N5  &kp N6  &rgb_ug RGB_BRI                     &bt BT_SEL 0  &trans          &out OUT_USB  &kp F5  &kp F6   &kp F7   &kp F8   &trans           &trans
-&rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &kp N7  &kp N8  &kp N9  &rgb_ug RGB_BRD  &rgb_ug RGB_TOG                  &out OUT_BLE                  &kp F9  &kp F10  &kp F11  &kp F12  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
-                                          &trans  &trans  &trans                                                                          &trans  &trans   &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans                             &rgb_ug RGB_BRI                   &kp F1  &kp F2   &kp F3   &kp F4   &kp PRINTSCREEN  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &trans            &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp F5  &kp F6   &kp F7   &kp F8   &rgb_ug RGB_SPI  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans  &trans                     &rgb_ug RGB_BRD                   &kp F9  &kp F10  &kp F11  &kp F12  &rgb_ug RGB_SPD  &studio_unlock
+                        &trans  &trans  &trans                                                               &trans  &trans   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
